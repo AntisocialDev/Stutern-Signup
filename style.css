@@ -1,0 +1,111 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.self-start{
+    align-self: flex-start;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+a{
+    color: #7d9820;
+    cursor: pointer;
+}
+
+.auth-img-div{
+    width: 50%;
+    height: 100%;
+    background: url('./assets/nature.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auth-form{
+    flex: 1;
+    gap: 30px;
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    height: 100vh;
+}
+
+
+
+
+button{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #7d9820;
+    border: none;
+    border-radius: 5px;
+}
+
+.auth-form button{
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    min-width: 300px;
+    border: solid 1px;
+    outline: none;
+    padding: 10px;
+}
+
+input:focus{
+    border-color: #7d9820;
+}
+
+@media (max-width: 1120px) {
+    main{
+
+    }   
+    .auth-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        border-radius: 20px;
+        width: 80%;
+        padding: 50px;
+    }
+
+    input{
+        min-width: auto !important;
+    }
+
+    .auth-img-div{
+        width: 100%;
+       
+    }
+}
