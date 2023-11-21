@@ -96,7 +96,8 @@ input:focus{
         transform: translate(-50%, -50%);
         background-color: #ffffff;
         border-radius: 20px;
-        width: 80%;
+        width: 60%;
+        min-width: 400px;
         padding: 50px;
     }
 
